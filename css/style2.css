@@ -1,0 +1,62 @@
+﻿.modalbg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0);
+	visibility: hidden;     /* Делаем блок невидимым */
+	-webkit-transition: all 2s ease-out  0.2s; /* Устанавливаем эффект перехода */
+	-o-transition: all 2s ease-out  0.2s;
+	transition: all 2s ease-out  0.2s;
+ }
+.dialog {
+	max-width:900px;
+	position: relative;
+	top: -1000px;
+	margin: 1% auto;
+	padding: 10px;
+	border-radius: 15px;
+	background: #fff;
+ }
+.modalbg:target {
+	opacity: 1;
+	visibility: visible;/* Делаем блок видимым */
+	background: rgba(4, 10, 30, 0.8);
+	-webkit-transition: all 0.5s ease-out;  /* Устанавливаем эффект перехода */
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.modalbg:target .dialog {
+	top: 50px;
+	-webkit-transition: all 0.8s ease-out 0.4s;
+	-o-transition: all 0.8s ease-out 0.4s;
+	transition: all 0.8s ease-out 0.4s;
+}
+/* Кнопка закрытия */
+.close {
+	background-color: rgba(61, 61, 61, 0.8);
+	border: 2px solid #ccc; 
+	color: #FFF;
+	line-height: 20px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 20px;
+	text-decoration: none;
+	font-size: 12px;  
+	font-weight: bold;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 0 10px #000000;
+			box-shadow: 0 0 10px #000000;
+	-webkit-transition: all 0.5s ease-out 0.2s;/* Устанавливаем эффект перехода */
+	-o-transition: all 0.5s ease-out 0.2s;
+	transition: all 0.5s ease-out 0.2s;
+}
+.close:hover {
+	background-color: rgba(252, 20, 0, 0.8);
+	-webkit-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;/* Устанавливаем эффект перехода */
+	transition: all 0.5s ease-out;
+}		

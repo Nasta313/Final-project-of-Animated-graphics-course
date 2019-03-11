@@ -1,0 +1,274 @@
+<!DOCTYPE HTML> 
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" /> 
+		<link rel="stylesheet" type="text/css" href="css/reset.css" > <!--сброс стилей-->
+		<link rel="shortcut icon" href="images/fav.gif" type="image/x-icon"> <!--фавикон-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" > <!--стилевой файл-->
+		<link rel="stylesheet" type="text/css" href="css/style1.css" > <!--стилевой файл для слова акция-->
+		<link rel="stylesheet" type="text/css" href="css/style2.css" > <!--стилевой файл для всплывающего окна-->
+		<script src="js/jquery-1.9.0.min.js"></script><!--jquery-->
+		<script src="js/preloader.js"></script> <!--предзагрузчик-->
+		<script src="js/tabs.js" ></script>
+		<script src="js/f.js" ></script><!--form-->
+		<script src="js/media.js" ></script><!--music-->
+		<title>ООО ЭНЕPГО ПМ</title>		
+	</head>
+	<body>
+							<!--Предзагрузчик-->
+		<div class="loaderArea">
+		   <div class="loader"></div>
+		</div>
+							<!-- Header-->
+		<header>
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo1.gif" alt="logo"></a>
+				</div>	
+							<!-- Form-->
+				<div class="wrap calculate">       
+					<a class="" href="#openmodal" ><img src="images/calculate.png" alt="calculate"></a>
+				</div>   
+				<div id="openmodal" class="modalbg">
+					<div class="dialog">
+						<a href="#close" title="Закрыть" class="close">X</a>
+						<form name="myForm" onsubmit="return validate(this);">
+							<div id='name'>
+								<p class="labelform">Имя:</p>
+								<input  type="text" name="ima" maxlength = "16">
+							</div>
+							<div id='mail'>
+								<p class="labelform">E-mail:</p>
+								<input type="text" name="mail" maxlength = "24">
+							</div>
+							<div>
+								<p class="labelform">Прикрепить файл:</p>
+								<input type="file" name="name">
+							</div>			
+							<div id='s'>
+								<p class="labelform">Ваше сообщение:</p>
+								<textarea name="mess" rows="2" cols="100"></textarea>
+							</div>
+							<div>
+								<button id="send_mess" type="submit">Отправить сообщение</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<ul class="contacts">
+					<li><img src="images/vel.png" alt="phone"><a href="tel:+375291063020" type="tel">+375291063020</a></li>
+					<li><img src="images/mts.png" alt="phone"><a href="tel:+375295662117" type="tel">+375295662117</a></li>
+					<li><img src="images/email.png" alt="mail"><a href="mailto:energopm@list.ru" type="email">energopm@list.ru</a></li>
+				</ul>
+			</div>
+		</header>
+							<!-- Menu-->
+		<div class="menu">
+			<ul>
+				<li> <a href="index.html">Главная</a></li>
+				<li id="menu-services"> <a href="index.html">Услуги</a>
+					<ul class="menu-services"> 
+						<li><a href="index.html">Проек ГСН</a></li>
+						<li><a href="index.html">Проект ГСВ</a></li>
+						<li><a href="index.html">Монтаж газопровода-ввода </a></li>
+						<li><a href="index.html">Монтаж внутридомового газопровода</a></li>
+						<li><a href="index.html">Проверка вент. дым канала</a></li>
+						<li><a href="index.html">Монтаж системы вентиляции</a></li>
+						<li><a href="index.html">Монтаж системы отопления</a></li>
+					</ul>
+				</li>
+				<li><a href="index.html">Информация</a></li>
+				<li><a href="index.html">Цены</a></li>
+				<li><a href="index.html">Контакты</a></li>
+			</ul>
+		</div>
+								<!-- Main content-->
+		<div class="container">
+			<div class="section">
+				<div class="section-one">
+					<div class="pm">
+						<h1> Проектирование <br> и монтаж</h1>
+					</div >
+					<div id="action">
+						<div class="act">
+							<b>А</b><b>К</b><b>Ц</b><b>И</b><b>Я</b><b>!</b>
+						</div>
+						<p>Только до конца весны!!!</p>
+						<h3>Закажи весь комплекс услуг по газоснабжению и получи скидку на проект 50%</h3>
+					</div>
+				</div>
+				<div class="stages">
+					<div class="image-build">
+						<div class="stages-1 stages-2">
+							<h4>Проект газопровода</h4>
+							<p> Проектирование газоснабжения: часть ГСН и часть ГСВ</p>
+							<div class="mask">
+								<a href="#openmodal1" class="info">Cколько стоит</a>
+							</div>
+						</div>
+						<div class="stages-1 stages-2">
+							<h4>Монтаж уличного газопровода</h4>
+							<p>Прокладка наружнего газопровода, подготовка исполнительно-технической документации, сдача в горгазе, врезка</p>
+							<div class="mask">
+								<a href="#openmodal2" class="info">Cколько стоит</a>
+							</div>
+						</div>
+						<div class="stages-1 stages-2">
+							<h4>Монтаж внутридомового газопровода</h4>
+							<p> Монтаж внутридомового газопровода с поставкой оборудования и материалов, подготовка исполнительно-технической документации, сдача в горгазе</p>
+							<div class="mask">
+								<a href="#openmodal3" class="info">Cколько стоит </a>
+							</div>
+						</div>
+						<div class="stages-1 stages-2">
+							<h4>Монтаж отопления, вентиляции</h4>
+							<p>Прокладка трубопроводов, монтаж отопительного оборудования, установка радиаторов, монтаж вентиляционных каналов</p>
+							<div class="mask">
+								<a href="#openmodal4" class="info">Cколько стоит</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="openmodal1" class="modalbg">
+					<div class="dialog">
+						<a href="#close" title="Закрыть" class="close">X</a>
+							<div >
+								<p> Стоимость проетных работ</p>
+							</div>
+					</div>
+				</div>
+				<div id="openmodal2" class="modalbg">
+					<div class="dialog">
+						<a href="#close" title="Закрыть" class="close">X</a>
+						<div >
+							<p>Стоимость монтажных работ</p>
+						</div>
+					</div>
+				</div>
+				<div id="openmodal3" class="modalbg">
+					<div class="dialog">
+						<a href="#close" title="Закрыть" class="close">X</a>
+						<div>
+							<p>Стоимомть монтажных работ</p>
+						</div>
+					</div>
+				</div>
+				<div id="openmodal4" class="modalbg">
+					<div class="dialog">
+						<a href="#close" title="Закрыть" class="close">X</a>
+						<div >
+							<p>Стоимость дополнительных работ</p>
+						</div>
+					</div>
+				</div>
+				<div id="sect">
+					<h6 > Что входит в стоимость наших услуг</h6>			
+					<ul>	
+						<li  class="block tab one" >
+							<a  href="#" class="link" title="tabOne" >
+								<p > Проектирование<br> газоснабжения </p>
+								<br>
+							</a>
+						</li>
+						<li class="block tab two">
+							<a href="#" class="link" title="tabTwo"  >
+								<p> Монтаж <br>внутридомовой<br> части газопровода </p>
+							</a>
+						</li>
+						<li class="block tab three">
+							<a href="#" class="link" title="tabThree"  >	
+								<p> Монтаж уличной <br>части газопровода </p><br>
+							</a>
+						</li >
+						<li class="block tab four">
+							<a href= "#" class="link" title="tabFour" >
+								<p> Дополнительно</p><br><br>
+							</a>
+						</li>
+					</ul>	
+				</div>
+				<div class="content">
+					<div id="tabOne" class="tab-content one">
+						<h5>Проектирование наружней части газопровода</h5>
+						<p>	Прежде чем, провести газ в дом, всегда сперва нужно заказать проект на газоснабжение в 
+						специалпроект может привести к 
+						удорожанию кпроектирования не только в теории, но и на
+						практике.</p>	
+						<p>	Обращаясь к нам, Вы можете быть уверены, что проект будет выполнен с соблюдением всех технических норм и не вызовет проблем при монтаже.
+						Компания «Энерго ПМ» осуществляет работы по проектированию наружной и внутридомовой системы газпроводов уже много лет. 
+						Наши проектировщики в. Окажут полную консультацию клиенту с выездом на объект.
+						Также мы дадим грамотную консультацию в подборе газового оборудования.
+						</p>
+											
+						<h5>Проектирование  внутридомовой части газопровода</h5>
+						<p>	Для выполнения проекта газоснабжения прежде всего клиенту 
+						необходимо предоставить:</p>	
+						<p>	Топосъемку
+						Технические условия
+						Технический паспорт на дом или строительный проект (на нем должны быть обозначены вентканалы 
+						и
+						делают проектировщики.
+						После изготовления проекта на газоснабжение, Вы можете обратиться к нам для
+						заключения договора на прокладку наружного газопровода , а также монтаж внутридомового газопровода.
+						</p>
+					
+					</div>
+				<div id="tabTwo" class="tab-content two">
+					<h5>Монтаж наружней части газопровода</h5>
+					<p>
+						Монтаж наружного (подземного) газопровода начинается с земляных работ. Их организация включает в себя установку ограждений и выемку грунта в местах разметки газопровода на требуемую в проекте глубину (1,25м-1,75м).
+						ного газопровода
+						По желанию заказчика врезку в основную магистраль можно 
+						производить при неполной готовности газоснабжающей системы, достаточно готовности газопровода-ввода. Для выполнения врезки необходимо с документом о готовности газопровода-ввода прибыть в «Горгаз», оплатить услуги по врезке и произвести запись на определённый день. При этом следует иметь в наличии муфту или тройник для врезки. После выполнения врезки на запорный кран газопровода-ввода устанавливается заглушка, а траншея засыпается по правилам.
+					</p>
+						
+				</div>
+				<div id="tabThree" class="tab-content three">
+					<h5>Монтаж внутридомовой части газопровода</h5>
+					<p>
+						Оказываем услуги на стадии проектирования электроснабжения с выполнением всех существующих норм.  
+						Подключение электричества не станет для Вас большой проблемой,
+						если обратитесь к услугам ООО «Энерго ПМ».
+					</p>	
+				</div>
+				<div id="tabFour" class="tab-content four">
+					<h5>Дополнительно</h5>
+					<p>
+						Компания «Энерго ПМ» помогает рассчитать и составить схему системы вентиляции, 
+						оказывает помощь в подборе вентиляционного оборудования, а также предлагаем услуги по монтажу воздуховодов любой сложности.
+					</p>
+					
+					
+					
+			  </div>
+				</div>
+			</div>
+		</div>
+			                            <!-- Footer-->
+		<footer>	
+			<div class="container">
+				<p>&copy; Все права защищены </p>
+				<p>Разработчик Анастасия Власовец </p>
+			</div>
+		</footer>
+											<!-- Music-->
+		<div id= "audio">
+		
+			<a id="play"><img src=" images/music.png" alt="music"><img src=" images/mus2.png" alt="music"></a>
+		</div >
+<script>
+
+
+</script>
+	</body>
+</html>
+
+
+
+
+
+
+          
+
+
+
